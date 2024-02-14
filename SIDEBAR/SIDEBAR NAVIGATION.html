@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sidebar Navigation Tabs</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 style="text-align:right;font-family: 'Times New Roman', Times, serif;">JAHEEZ PAINT CO</h1>
+        <ul class="navigation">
+            <li class="active">
+            <a href="#">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="text">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="basket-outline"></ion-icon></span>
+                <span class="text">Products</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="file-tray-stacked-outline"></ion-icon></span>
+                <span class="text">Services</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="business-outline"></ion-icon></span>
+                <span class="text">About US</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+                <span class="text">Contact Us</span>
+            </a>
+        </li>
+
+        </ul>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let list = document.querySelectorAll('.navigation li');
+    function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active')
+    }
+    list.forEach((item)=>
+    item.addEventListener('click',activeLink));
+</script>
+    </body>
+</html>

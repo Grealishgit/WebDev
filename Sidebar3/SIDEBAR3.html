@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dr="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAHEEZ PAINTS AND COAT CO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+      <a href="#" class="jaheez">JAHEEZ CO</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQs</a>
+      </div>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </div>  
+  </header>  
+  <section class="section-main">
+<h1>Jaheez Paints And Coatings LTD</h1>
+  </section>
+<section class="section-two">
+<h2>Welcome to Jaheez Paint And Coatings LTD</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis beatae eos quas facere in sed voluptates qui incidunt natus labore, id odit rem, inventore, aspernatur eveniet libero accusamus commodi quibusdam?</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis beatae eos quas facere in sed voluptates qui incidunt natus labore, id odit rem, inventore, aspernatur eveniet libero accusamus commodi quibusdam?</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis beatae eos quas facere in sed voluptates qui incidunt natus labore, id odit rem, inventore, aspernatur eveniet libero accusamus commodi quibusdam?</p>
+<h2>Quality Paint For Quality Appearance</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda doloribus eveniet. Necessitatibus laudantium quos corporis natus dicta architecto accusamus, excepturi possimus, harum ipsam, nulla velit dolorum itaque aperiam maxime.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sunt dignissimos quasi qui quo, amet ut ipsum est totam. Possimus nihil magni distinctio pariatur laboriosam aspernatur atque ipsum officia voluptas.</p>
+
+</section>
+<script type="text/javascript">
+//javascript code for animation bar effect on scrolling the page
+window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+//javascript for responsive navigation sidebar menu
+var menu = document.querySelector('.menu');
+var menuBtn = document.querySelector('.menu-btn');
+var closeBtn = document.querySelector('.close-btn');
+
+menuBtn.addEventListener("click", () => {
+menu.classList.add('active');
+});
+
+closeBtn.addEventListener("click", () => {
+menu.classList.remove('active');
+});
+</script>
+</body>
+</html>
